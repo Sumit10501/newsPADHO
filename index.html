@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>newsDekho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+        
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav>
+        <div class="navbar container">
+            <a href="#" onclick="reload()" class="logo">
+                <p class="logo-text">newsPADHO</p>
+            </a>
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="Search News...">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="sub-navbar">
+        <div class=" container flex">
+            <div class="sub-navbar-link">
+                <ul class="flex">
+                    <li class="hover-link sub-navbar-item" id="politics" onclick="onNavItemClick('politics')">POLITICS
+                    </li>
+                    <li class="hover-link sub-navbar-item" id="education" onclick="onNavItemClick('education')">
+                        EDUCATION</li>
+                    <li class="hover-link sub-navbar-item" id="technology" onclick="onNavItemClick('technology')">
+                        TECHNOLOGY</li>
+                    <li class="hover-link sub-navbar-item" id="stock" onclick="onNavItemClick('stock')">STOCKS</li>
+                    <li class="hover-link sub-navbar-item" id="medical" onclick="onNavItemClick('medical')">MEDICAL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+
+    <main>
+        <div class="card-container container" id="card-container"></div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="new-title">This is title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 01/06/2023</h6>
+                <p class="news-description" id="news-description">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Nulla esse quo doloribus soluta tenetur
+                    dicta voluptatum! Perspiciatis neque est delectus.</p>
+            </div>
+        </div>
+    </template>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Developed by Sumit Sharma, Thanks to visit my website ❤️</p>
+    </footer>
+
+
+<!-- Js linked -->
+<script src="script.js"></script>
+</body>
+
+</html>
